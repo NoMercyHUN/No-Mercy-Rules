@@ -20,15 +20,15 @@ body{
 .wrap{
   max-width:980px;
   margin:0 auto;
-  padding:0 18px;
+  padding:28px 18px 60px;
 }
 
 .nav{
-  border-bottom:1px solid var(--border);
   padding:14px 0 18px;
+  border-bottom:1px solid var(--border);
 }
 
-.nav .wrap{
+.nav-inner{
   display:flex;
   flex-wrap:wrap;
   gap:10px;
@@ -70,8 +70,6 @@ body{
 }
 
 .card{
-  max-width:980px;
-  margin:28px auto 60px;
   background:linear-gradient(180deg, rgba(16,24,35,1) 0%, rgba(12,17,24,1) 100%);
   border:1px solid var(--border);
   border-radius:18px;
