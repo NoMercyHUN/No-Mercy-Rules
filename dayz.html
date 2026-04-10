@@ -24,30 +24,75 @@
     </div>
   </div>
 
+ <!-- CONTENT -->
   <div class="wrap">
     <div class="card">
-      <h1>Építés szabályzat</h1>
-      <p class="sub">Az építés engedélyezett, amennyiben a bázis fair, teljes mértékben raidelhető és nem akadályozza a játékmenetet.</p>
+      <h1>Építési szabályok</h1>
+      <p class="sub">Az építés engedélyezett, amennyiben a bázisok fair módon raidelhetők, teljes mértékben támadhatók, és nem befolyásolják negatívan a játékmenetet.</p>
 
       <h2>Alapelv</h2>
-      <p>A bázis minden esetben fair módon raidelhető kell legyen, és nem használhat ki semmilyen játékmechanikai hibát vagy nem intended megoldást.</p>
-      <p>Ha egy base bár technikailag szabályos, de a gyakorlatban unfair előnyt biztosít vagy a raid rendszer megkerülésére épül, az illegálisnak minősülhet.</p>
+      <p>Minden bázisnak teljes mértékben, fair módon raidelhetőnek kell lennie, és nem használhat ki nem szándékos mechanikákat vagy játékhibákat.</p>
+      <p>Még ha egy bázis technikailag szabályos is, illegálisnak minősülhet, ha tisztességtelen előnyt biztosít, vagy a raid mechanikák megkerülésére épül.</p>
 
-      <h2>1. Alapszabályok</h2>
+      <h2>1. Általános szabályok</h2>
       <ul>
-        <li>Csoportonként maximum 1 flagpole engedélyezett.</li>
-        <li>A base mérete maximum 30 méteres sugár lehet a zászlórúd körül.</li>
+        <li>Csoportonként legfeljebb egy zászlórúd engedélyezett.</li>
+        <li>A bázis mérete nem haladhatja meg a zászlórúdtól számított 30 méteres sugarat.</li>
       </ul>
 
       <h2>2. Elhelyezési korlátozások</h2>
       <ul>
-        <li>Tilos építeni katonai területek vagy event helyszínek közvetlen közelében, illetve olyan módon, hogy közvetlen rálátás legyen ezekre.</li>
-        <li>Tilos építeni bármilyen úton vagy jármű által használható útszakaszon.</li>
-        <li>Tilos építeni rendőrségeken, börtönökben, kórházakban vagy egészségügyi létesítményekben.</li>
+        <li>Tilos építeni katonai zónák vagy event helyszínek közelében, illetve úgy, hogy onnan közvetlen rálátás nyíljon rájuk.</li>
+        <li>Tilos építeni utakon vagy bármilyen, járművel használható útvonalon.</li>
+        <li>Tilos építeni rendőrőrsökön, börtönökben, kórházakban vagy egészségügyi létesítményekben.</li>
       </ul>
 
-      <h2>3. Base szerkezeti követelmények</h2>
+      <h2>3. Szerkezeti követelmények</h2>
       <ul>
-        <li>A bázisnak a talajhoz vagy egy épülethez kell kapcsolódnia.</li>
-        <li>„Lebegő” bázis építése tilos. Az alap peremétől számítva legfeljebb 1 alap négyzet lehet a levegőben.</li>
-        <li>A maximális építési magasság script által szabályozott (kb
+        <li>A bázisnak a talajhoz vagy egy meglévő épülethez kell kapcsolódnia.</li>
+        <li>Lebegő bázisok nem engedélyezettek. Legfeljebb egy alap elem nyúlhat túl a bázis szélén.</li>
+        <li>A maximális építési magasságot script szabályozza (megközelítőleg 15 méter a talajszinttől).</li>
+        <li>A bázisnak egyetlen, gyalogosan közlekedő játékos számára is raidelhetőnek kell lennie boostolás, glitch-ek vagy bontás használata nélkül.</li>
+      </ul>
+
+      <h2>4. Ajtók és belső elrendezés</h2>
+      <ul>
+        <li>Bázisonként legfeljebb 15 ajtó engedélyezett.</li>
+        <li>Az ajtók egymásra stackelése tilos.</li>
+        <li>Az ajtók között legalább egy fekvő játékos hosszának megfelelő helynek kell lennie.</li>
+        <li>A dupla ablakos vagy többrétegű airlock rendszerek nem engedélyezettek.</li>
+        <li>Tilos minden olyan elrendezés, amely mesterségesen lassítja a raidet (például labirintusszerű kialakítás).</li>
+      </ul>
+
+      <h2>5. Tiltott építési módszerek</h2>
+      <ul>
+        <li>A sátorstackelés nem engedélyezett (kisebb sátrak elhelyezése nagyobbakon belül).</li>
+        <li>Trap base-ek építése tilos.</li>
+        <li>Szögesdrót nem használható a bázis belsejében.</li>
+        <li>Tilos minden olyan kialakítás, amely meghatározott animációkra kényszeríti a játékost (ugrás, guggolás, fekvés, fegyver felemelése stb.).</li>
+        <li>Tilos minden olyan szerkezet, amely collision- vagy hitbox-mechanikák kihasználására épül.</li>
+      </ul>
+
+      <h2>6. A fair raid követelményei</h2>
+      <ul>
+        <li>A bázis nem tartalmazhat nem raidelhető területeket vagy elérhetetlen lootot.</li>
+        <li>Az alagutaknak és raid útvonalaknak legalább két kisfal szélességűnek kell lenniük.</li>
+        <li>A „hamisan raidelhető” bázisok (amelyek raidelhetőnek tűnnek, de valójában nem azok) tilosak.</li>
+      </ul>
+
+      <h2>7. Peek szabályok</h2>
+      <ul>
+        <li>Lövés és kilátás kizárólag BBP (BaseBuildingPlus) ablakokon keresztül engedélyezett.</li>
+        <li>Minden más peekelési forma tilos.</li>
+        <li>A teljes szerkezetnek (fal, keret, ablak) láthatónak kell maradnia.</li>
+        <li>A pixel peek, foot peek, gap shooting, illetve bármilyen hitbox- vagy modellkihasználás szigorúan tilos.</li>
+        <li>Minden ilyen exploit súlyos szabálysértésnek minősül.</li>
+      </ul>
+
+      <h2>Admin jogkör</h2>
+      <p>Az adminok fenntartják a jogot arra, hogy bármely bázist illegálisnak nyilvánítsanak, módosítsanak vagy eltávolítsanak, ha az tisztességtelen előnyt biztosít, vagy sérti a szabályok szellemét.</p>
+    </div>
+  </div>
+
+</body>
+</html>
