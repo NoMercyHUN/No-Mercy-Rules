@@ -3,45 +3,71 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>No Mercy DayZ – Rules</title>
+  <title>No Mercy DayZ - Rules</title>
   <link rel="stylesheet" href="../style.css">
 </head>
-
 <body>
 
   <div class="nav">
     <div class="wrap nav-inner">
       <div class="brand">No Mercy DayZ</div>
+
       <a class="active" href="index.html">Home</a>
       <a href="general.html">General</a>
+      <a href="groups.html">Groups</a>
       <a href="discord.html">Discord</a>
       <a href="dayz.html">Base Building</a>
       <a href="raid.html">Raid</a>
+      <a href="safezone.html">Safe Zone</a>
       <a href="punishments.html">Punishments</a>
 
       <div class="lang-switch">
-        <a href="../index.html">HU</a>
-        <a class="active" href="index.html">EN</a>
+        <a href="/No-Mercy-Rules/index.html">HU</a>
+        <a class="active" href="/No-Mercy-Rules/en/index.html">EN</a>
       </div>
     </div>
   </div>
 
   <div class="wrap">
     <div class="card">
-      <h1>Rules</h1>
-      <p class="sub">By playing on the server and using Discord, you accept these rules.</p>
+
+      <h1>No Mercy DayZ Rules</h1>
+
+      <p class="sub">
+        By playing on our server and using our Discord, you automatically agree to all rules listed below.
+        Please make sure to read every section before playing.
+      </p>
 
       <ul>
-        <li><a href="general.html">General Rules</a></li>
-        <li><a href="discord.html">Discord Rules</a></li>
-        <li><a href="dayz.html">Base Building Rules</a></li>
-        <li><a href="raid.html">Raid Rules</a></li>
-        <li><a href="punishments.html">Punishments</a></li>
+        <li><a href="general.html">📜 General Rules</a></li>
+        <li><a href="groups.html">👥 Group Rules</a></li>
+        <li><a href="discord.html">💬 Discord Rules</a></li>
+        <li><a href="dayz.html">🏗️ Base Building Rules</a></li>
+        <li><a href="raid.html">💥 Raid Rules</a></li>
+        <li><a href="safezone.html">🛡️ Safe Zone Rules</a></li>
+        <li><a href="punishments.html">🔨 Punishments</a></li>
       </ul>
 
-      <div class="footer">No Mercy HUN DayZ</div>
+      <h2>Important Information</h2>
+
+      <ul>
+        <li>Not knowing the rules is not an excuse.</li>
+        <li>Admin decisions are final.</li>
+        <li>The rules may be updated at any time without prior notice.</li>
+        <li>If you have a dispute or issue, please create a support ticket on Discord.</li>
+      </ul>
+
+      <div class="footer">
+        No Mercy DayZ • Last Updated: <span id="d"></span>
+      </div>
+
     </div>
   </div>
+
+  <script>
+    const d = new Date();
+    document.getElementById("d").textContent = d.toISOString().slice(0, 10);
+  </script>
 
 </body>
 </html>
