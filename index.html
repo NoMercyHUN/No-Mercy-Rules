@@ -14,9 +14,11 @@
 
       <a class="active" href="index.html">Főoldal</a>
       <a href="atalanos.html">Általános</a>
+      <a href="csapatok.html">Csapatok</a>
       <a href="discord.html">Discord</a>
       <a href="dayz.html">Bázis Építés</a>
       <a href="raid.html">Raid</a>
+      <a href="safezone.html">Safe Zone</a>
       <a href="buntetesek.html">Büntetések</a>
 
       <div class="lang-switch">
@@ -28,18 +30,34 @@
 
   <div class="wrap">
     <div class="card">
-      <h1>Szabályzat</h1>
-      <p class="sub">Válassz kategóriát. A szerveren és a Discordon való részvétellel elfogadod a szabályokat.</p>
+      <h1>No Mercy DayZ Szabályzat</h1>
+
+      <p class="sub">
+        A szerveren és a Discordon való részvétellel automatikusan elfogadod az alábbi szabályokat.
+        Kérjük, olvasd el az összes kategóriát játék előtt.
+      </p>
 
       <ul>
-        <li><a href="atalanos.html">Általános szabályok</a></li>
-        <li><a href="discord.html">Discord szabályzat</a></li>
-        <li><a href="dayz.html">Bázis Építés</a></li>
-        <li><a href="buntetesek.html">Büntetések</a></li>
-        <li><a href="raid.html">Raid szabályzat</a></li>
+        <li><a href="atalanos.html">📜 Általános szabályok</a></li>
+        <li><a href="csapatok.html">👥 Csapat szabályok</a></li>
+        <li><a href="discord.html">💬 Discord szabályzat</a></li>
+        <li><a href="dayz.html">🏗️ Bázis Építési szabályok</a></li>
+        <li><a href="raid.html">💥 Raid szabályzat</a></li>
+        <li><a href="safezone.html">🛡️ Safe Zone szabályok</a></li>
+        <li><a href="buntetesek.html">🔨 Büntetések</a></li>
       </ul>
 
-      <div class="footer">Utolsó frissítés: <span id="d"></span></div>
+      <h2>Fontos információk</h2>
+      <ul>
+        <li>A szabályok nem ismerete nem mentesít a következmények alól.</li>
+        <li>Az Admin csapat döntése minden esetben végleges.</li>
+        <li>A szabályok bármikor módosulhatnak előzetes értesítés nélkül.</li>
+        <li>Vitás helyzetek esetén nyiss ticketet Discordon.</li>
+      </ul>
+
+      <div class="footer">
+        No Mercy DayZ • Utolsó frissítés: <span id="d"></span>
+      </div>
     </div>
   </div>
 
@@ -47,5 +65,6 @@
     const d = new Date();
     document.getElementById("d").textContent = d.toISOString().slice(0, 10);
   </script>
+
 </body>
 </html>
